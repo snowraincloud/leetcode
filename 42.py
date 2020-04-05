@@ -66,11 +66,34 @@ class Solution:
             else:
                 i += 1
         return ans
+    
+    def trapBetter(self, height: list) -> int:
+        n = len(height)
+        if n in (0, 1, 2):
+            return 0
+        l, l_max = 1, height[0]
+        r, r_max = n-2, height[n-1]
+        ans = 0
+        while l <= r:
+            if l_max > r_max:
+                if height[r] < r_max:
+                    ans += r_max - height[r]
+                else:
+                    r_max = height[r]
+                r -= 1
+            else:
+                if height[l] < l_max:
+                    ans += l_max - height[l]
+                else:
+                    l_max = height[l]
+                l += 1
+        return ans
+
 
 
 
 # [4,2,0,3,2,5]
 if __name__ == "__main__":
     solution = Solution()
-    res = solution.trapModif([0,1,0,2,1,0,1,3,2,1,2,1])
+    res = solution.trapBetter([4,2,0,3,2,5])
     print(res)
