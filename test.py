@@ -21,11 +21,16 @@
 
 # print(test['freq'])
 
-def test(node: dict):
-    node['1'] = 2
+# def test(node: dict):
+#     node['1'] = 2
 
-my_dict = {
-    '1': 0
-}
-test(my_dict)
-print(my_dict)
+# my_dict = {
+#     '1': 0
+# }
+# test(my_dict)
+# print(my_dict)
+
+from functools import reduce
+sum_str = str("10") + str("15")
+temp_sum = reduce(lambda x,y : x+y, sum_str)
+print(temp_sum)
