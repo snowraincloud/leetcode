@@ -30,7 +30,10 @@
 # test(my_dict)
 # print(my_dict)
 
-from functools import reduce
-sum_str = str("10") + str("15")
-temp_sum = reduce(lambda x,y : x+y, sum_str)
-print(temp_sum)
+# from functools import reduce
+# sum_str = str("10") + str("15")
+# temp_sum = reduce(lambda x,y : x+y, sum_str)
+# print(temp_sum)
+
+import re
+print("the sky  is blue".split())
