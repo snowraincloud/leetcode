@@ -35,5 +35,8 @@
 # temp_sum = reduce(lambda x,y : x+y, sum_str)
 # print(temp_sum)
 
-import re
-print("the sky  is blue".split())
+# import re
+# print("the sky  is blue".split())
+
+for i in range(1, 1):
+    print(i)
