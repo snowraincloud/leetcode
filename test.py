@@ -38,5 +38,10 @@
 # import re
 # print("the sky  is blue".split())
 
-for i in range(1, 1):
-    print(i)
+# for i in range(1, 1):
+#     print(i)
+
+x, y = [1, 2]
+
+print(x)
+print(y)
