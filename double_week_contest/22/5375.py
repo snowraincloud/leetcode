@@ -47,7 +47,7 @@
 from functools import lru_cache
 
 class Solution:
-    @lru_cache()
+    
     def numberOfArrays(self, s: str, k: int) -> int:
         if int(s[1:]) == 0:
             if int(s) <= k:
@@ -55,6 +55,7 @@ class Solution:
             else:
                 return 0
         mod = 1e9+7
+        @lru_cache()
         def f(s) -> int:
             if s == "":
                 return 1
@@ -91,7 +92,7 @@ class Solution:
 # "2553462832281151811513004352253111", 456 21752500
 if __name__ == "__main__":
     solution = Solution()
-    res = solution.numberOfArraysAnother("2553462832281151811513004352253111", 456)
+    res = solution.numberOfArrays("2553462832281151811513004352253111", 456)
     print(res)
 
 
