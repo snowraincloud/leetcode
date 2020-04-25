@@ -65,3 +65,6 @@
 #     print("-------")
 # else:
 #     print("1111111")
+a = list()
+a.append([1] + [2])
+print(a)
