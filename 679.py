@@ -28,8 +28,6 @@ class Solution:
         f(nums)
         return mark
 
-10 
-
 if __name__ == "__main__":
     s = Solution()
     print(s.judgePoint24([1, 2, 1, 2]))
