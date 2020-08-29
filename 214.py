@@ -6,6 +6,10 @@ class Solution:
             elif s[:i] == s[2*i-1:i-1:-1]:
                 return s[:2*i-1:-1] + s
         return s[:0:-1] + s
+
+
 if __name__ == "__main__":
     s = Solution()
-    print(s.shortestPalindrome("abcd"))
+    print(s.shortestPalindrome("aacecaaa"))
+
+
