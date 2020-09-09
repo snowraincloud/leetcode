@@ -52,4 +52,4 @@ class Solution:
 
 if __name__ == "__main__":
     s = Solution()
-    print(*s.combineTwo(4,2 ), sep="\n")
+    print(*s.combineTwo(4,2), sep="\n")
