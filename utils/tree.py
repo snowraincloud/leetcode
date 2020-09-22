@@ -16,12 +16,12 @@ def buildTree(nodes:List[int]) -> TreeNode:
     i, l = 1, len(nodes)
     while tree_nodes and i < l:
         tree_node = tree_nodes.popleft()
-        if nodes[i]:
+        if nodes[i] != None:
             tree_node.left = TreeNode(nodes[i])
             tree_nodes.append(tree_node.left)
         i += 1
         if i < l:
-            if nodes[i]:
+            if nodes[i] != None:
                 tree_node.right = TreeNode(nodes[i])
                 tree_nodes.append(tree_node.right)
             i += 1
@@ -29,4 +29,4 @@ def buildTree(nodes:List[int]) -> TreeNode:
     return root
 
 if __name__ == "__main__":
-    root = buildTree([3,9,20,None,None,15,7])
+    root = buildTree([0,0,None,0,0])
