@@ -99,6 +99,5 @@ public class Solution1004 {
         int k = 2;
         int res = new Solution1004().longestOnes(A, k);
         System.out.println(res);
-        System.out.println(-1<<2);
     }
 }
